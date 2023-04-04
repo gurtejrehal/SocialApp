@@ -43,6 +43,6 @@ app.use("/", authRoute);
 app.use("/", quoteRoute);
 
 // port
-app.listen(9000, () => {
+app.listen(process.env.PORT || 9000, () => {
   console.log("Server running at port: 9000");
 });
