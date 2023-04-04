@@ -1,0 +1,31 @@
+<%- include("partials/head.ejs"); -%>
+
+<%- include("partials/navbar.ejs"); -%>
+
+<div class="col-md-10 m-auto position-absolute top-50 start-50 translate-middle">
+
+    <form action="/create" method="post">
+
+        <h3 class="font3">Create quote</h3>
+
+        <div class="mb-3">
+            <label for="create-quote" class="form-label">Write your quote 🖊️</label>
+            <textarea name="quote" class="form-control" id="create-quote" cols="30" row="10" maxlength="800">
+
+            </textarea>
+
+            <div id="emailHelp" class="form-text text-danger">Max character 100.</div>
+        </div>
+
+        <div class="mb-3">
+            <label for="color-input" class="form-label">Choose background color 🦄</label>
+            <input name="bgcolor" type="color" value="#d927bb" class="form-control form-control-color" id="color-input">
+
+        </div>
+
+        <button type="submit" class="btn btn-outline-dark font3">Post <i class="fas fa-heart fa-beat ml-2" style="color: rgb(228, 49, 205)"></i></button>
+    </form>
+</div>
+
+
+<%- include("partials/footer.ejs"); -%>
