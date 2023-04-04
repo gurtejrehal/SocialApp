@@ -42,6 +42,7 @@ mongoose
 app.use("/", authRoute);
 app.use("/", quoteRoute);
 
-app.listen(3000, () => {
-  console.log("Server running at port: 3000");
+// port
+app.listen(9000, () => {
+  console.log("Server running at port: 9000");
 });
